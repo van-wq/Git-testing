@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <title>Acceso Restringido</title>
+    <link rel="stylesheet" href="css/estilo.css" />
+    <link rel="icon" href="img/copa_libertadores.png" type="image/png">
+    <script src="js/funcionabilidad.js" defer></script>
+</head>
+<body onload="paginaActual('Acceso')">
+    
+    <!-- HEADER -->
+    <header class="main-header">
+        <div class="header-content">
+            <a href="index.html" class="logo">
+                <img src="img/copa_libertadores.png" alt="Copa Libertadores" class="logo-img">
+                <span class="logo-text">Copa Libertadores</span>
+            </a>
+            <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+            <nav>
+                <ul class="menu">
+                    <li><a href="index.html" class="menu-link">Inicio</a></li>
+                    <li><a href="pagina1.html" class="menu-link">Campeones</a></li>
+                    <li><a href="pagina2.html" class="menu-link">Jugadores</a></li>
+                    <li><a href="pagina3.html" class="menu-link">Enlaces</a></li>
+                    <li><a href="acceso.html" class="menu-link active">Acceso</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- FORMULARIO DE LOGIN -->
+    <section class="hero login">
+        <h1>Zona Restringida</h1>
+        <p class="hero-subtitle">Ingrese la clave para acceder al Quiz secreto ⚽</p>
+        <input type="password" id="clave" placeholder="Ingrese la clave">
+        <button onclick="verificarClave()">Entrar</button>
+    </section>
+
+    <!-- Contenido oculto: Quiz -->
+    <section id="contenidoSecreto" style="display:none;" class="contenedor">
+        <div class="caja">
+            <h3>Pregunta 1</h3>
+            <p>¿Qué club ganó más Copas Libertadores?</p>
+            <button onclick="respuesta(this,true)">Independiente</button>
+            <button onclick="respuesta(this,false)">Boca Juniors</button>
+        </div>
+
+        <div class="caja">
+            <h3>Pregunta 2</h3>
+            <p>¿Qué país tiene más títulos de la Libertadores?</p>
+            <button onclick="respuesta(this,true)">Argentina</button>
+            <button onclick="respuesta(this,false)">Brasil</button>
+        </div>
+
+        <div class="caja">
+            <h3>Pregunta 3</h3>
+            <p>¿En qué año se jugó la primera edición de la Copa Libertadores?</p>
+            <button onclick="respuesta(this,true)">1960</button>
+            <button onclick="respuesta(this,false)">1970</button>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>
+        Alumno: Jorge Exequiel Lazarte <br />
+        Curso: Tecnicatura Programacion <br />
+        Materia: Programacion 2<br />Docente: Claudia Elizabeth Sandez
+        </p>
+    </footer>
+</body>
+</html>
