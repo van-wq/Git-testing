@@ -5,7 +5,7 @@
     <title>Copa Libertadores - Inicio</title>
     <link rel="stylesheet" href="css/estilo.css" />
     <link rel="icon" href="img/copa_libertadores.png" type="image/png">
-    <script src="js/funcionabilidad.js"></script>
+    <script src="js/funcionabilidad.js" defer></script>
 </head>
 <body onload="paginaActual('Inicio')">
     
@@ -19,9 +19,9 @@
             <nav>
                 <ul class="menu">
                     <li><a href="index.html" class="menu-link active">Inicio</a></li>
-                    <li><a href="Campeones.html" class="menu-link">Campeones</a></li>
-                    <li><a href="Jugadores.html" class="menu-link">Jugadores</a></li>
-                    <li><a href="Enlances.html" class="menu-link">Enlaces</a></li>
+                    <li><a href="pagina1.html" class="menu-link">Campeones</a></li>
+                    <li><a href="pagina2.html" class="menu-link">Jugadores</a></li>
+                    <li><a href="pagina3.html" class="menu-link">Enlaces</a></li>
                 </ul>
             </nav>
         </div>
@@ -31,6 +31,7 @@
     <section class="hero">
         <h1>COPA LIBERTADORES</h1>
         <p class="hero-subtitle">La máxima competición de clubes de fútbol de América</p>
+        <button class="hero-button" onclick="mostrarMensaje()">Descubrir más pasión</button>
     </section>
 
     <!-- Secciones -->
